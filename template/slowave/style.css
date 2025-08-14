@@ -4046,3 +4046,17 @@ input:focus:-ms-input-placeholder {
 	    overflow-y: scroll;
 	}
 }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* This creates a 16:9 aspect ratio (height is 56.25% of width) */
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
